@@ -1,0 +1,11 @@
+name = "v2panel"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+workers_dev = true
+
+# KV namespace is auto-provisioned on deploy (no id needed on recent wrangler).
+[[kv_namespaces]]
+binding = "DB"
+
+[ai]
+binding = "AI"
